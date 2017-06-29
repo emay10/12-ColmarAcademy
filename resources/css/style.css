@@ -1,11 +1,32 @@
 html {
-  font-family: helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: dimgray;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 div {
-  border: 3px solid red;
+  /*border: 3px solid red;*/
 }
 
 .flex {
@@ -23,7 +44,7 @@ header {
   height: 4rem;
   width: 100%;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.95;
   position: fixed;
   z-index: 10;
 }
@@ -33,32 +54,53 @@ header {
 }
 
 .colmar {
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
 }
 
 .academy {
-  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: silver;
 }
 
 nav li{
   display: inline-block;
   padding: 0.5rem;
-  color: dimgray;
 }
 
-.main-content {
+nav li a {
+  color: #333;
+}
+
+.banner {
   position: relative;
   top: 4rem;
-  background-color: gray;
+  background-color: silver;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .banner .img {
   width: 60%;
+  margin-right: 2.5rem;
 }
 
 .banner .img img {
   width: 100%;
+  height: auto;
+}
+
+.banner .title {
+  /*margin-right: 6rem;*/
+  width: 30%;
+}
+
+.start-btn {
+  background-color: #444;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  color: lightgray;
 }
