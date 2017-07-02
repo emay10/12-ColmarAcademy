@@ -42,13 +42,19 @@ p {
   color: #666;
 }
 
+a:hover {
+  cursor: pointer;
+  color: dodgerblue;
+  transition: color, 2s, ease-in, 0.3s;
+}
+
 .flex {
   display: flex;
   align-items: center;
 }
 
 .container {
-  width: 1200px;
+  /*width: 1200px;*/
   padding-left: 1.5rem;
 }
 
@@ -66,6 +72,7 @@ header {
 }
 
 .logo img {
+  margin-left: 1.5rem;
   margin-right: 0.25rem;
 }
 
@@ -90,10 +97,14 @@ nav li a {
   color: #666;
 }
 
+nav {
+  margin-right: 3rem;
+}
+
 .banner {
   position: relative;
   top: 4rem;
-  background-color: silver;
+  background-color: Gainsboro;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -114,12 +125,6 @@ nav li a {
   margin: 2rem auto;
   padding: 0.5rem;
   color: lightgray;
-  /*width: 80%;*/
-}
-
-#campus {
-  position: relative;
-  top: 4rem;
 }
 
 .main-section {
@@ -133,14 +138,27 @@ nav li a {
 .main-section img {
   width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 
 .caption {
   font-weight: bold;
 }
 
+#campus {
+  position: relative;
+  top: 4rem;
+  align-items: flex-start;
+}
+
 .campus-info {
-  width: 423px;
+  width: 480px;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.campus-info .item {
+  padding-right: 0.5rem;
 }
 
 .campus-info img {
@@ -151,4 +169,8 @@ nav li a {
 
 .read-more a {
   color: dodgerblue;
+}
+
+.lecture {
+  background-color: Gainsboro;
 }
