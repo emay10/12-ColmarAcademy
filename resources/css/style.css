@@ -10,13 +10,15 @@ div {
 
 h1,
 h2,
-h3 {
+h3,
+.caption {
   font-weight: bold;
 }
 
 h1,
 h2,
 h3,
+h4,
 p {
   line-height: 1.4;
   display: block;
@@ -38,6 +40,10 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 p {
   color: #666;
 }
@@ -54,8 +60,12 @@ a:hover {
 }
 
 .container {
-  /*width: 1200px;*/
+  /*max-width: 1200px;*/
   padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  top: 4rem;
+  position: relative;
 }
 
 header {
@@ -78,8 +88,8 @@ header:hover {
 }
 
 .logo img {
-  margin-left: 1.5rem;
-  margin-right: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 0.25rem;
 }
 
 .colmar {
@@ -91,7 +101,7 @@ header:hover {
 .academy {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  color: silver;
+  color: Silver;
 }
 
 nav li {
@@ -104,15 +114,13 @@ nav li a {
 }
 
 nav {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
-.banner {
-  position: relative;
-  top: 4rem;
+/*.lecture, .fisma*/
+.banner,
+.learning {
   background-color: Gainsboro;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .banner img {
@@ -133,12 +141,16 @@ nav {
   color: lightgray;
 }
 
+.start-btn:hover {
+  background-color: #666;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
 .main-section {
   width: 60%;
   flex-direction: column;
   margin-right: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .main-section img {
@@ -147,24 +159,23 @@ nav {
   padding-bottom: 2rem;
 }
 
-.caption {
-  font-weight: bold;
-}
-
 #campus {
-  position: relative;
-  top: 4rem;
   align-items: flex-start;
 }
 
 .campus-info {
   width: 480px;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 .campus-info .item {
   padding-right: 0.5rem;
+}
+
+.campus-info .item:hover {
+  background-color: Gainsboro;
+  transition: background-color .2s ease-in;
 }
 
 .campus-info img {
@@ -177,6 +188,35 @@ nav {
   color: dodgerblue;
 }
 
-.lecture {
-  background-color: Gainsboro;
+.learning {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.learning .title,
+.thesis .title {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.learning .item {
+  height: 316px;
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.learning .item:hover {
+  box-shadow: 0.5rem 0.5rem .25rem #888;
+  transition: box-shadow 0.1s ease-in;
+}
+
+.learning img {
+  width: 100%;
+  height: auto;
+}
+
+.learning .content {
+  padding: 1rem 1rem 0 1rem;
 }
