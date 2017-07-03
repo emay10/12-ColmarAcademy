@@ -4,10 +4,6 @@ html {
   color: #444;
 }
 
-div {
-  /*border: 3px solid red;*/
-}
-
 h1,
 h2,
 h3,
@@ -83,7 +79,8 @@ header:hover {
   transition: opacity, 2s, ease-in, 0.2s;
 }
 
-.logo {
+.logo,
+.copyright {
   flex-grow: 1;
 }
 
@@ -117,7 +114,7 @@ nav {
   margin-right: 2rem;
 }
 
-/*.lecture, .fisma*/
+/*.lecture, .fisma,*/
 .banner,
 .learning {
   background-color: Gainsboro;
@@ -153,32 +150,34 @@ nav {
   margin-right: 1.5rem;
 }
 
-.main-section img {
+.main-section img,
+.main-section video {
   width: 100%;
   height: auto;
   padding-bottom: 2rem;
 }
 
-#campus {
+#campus,
+.thesis {
   align-items: flex-start;
 }
 
-.campus-info {
+.sidebar {
   width: 480px;
   flex-direction: column;
   margin-top: -1rem;
 }
 
-.campus-info .item {
+.sidebar .item {
   padding-right: 0.5rem;
 }
 
-.campus-info .item:hover {
+.sidebar .item:hover {
   background-color: Gainsboro;
-  transition: background-color .2s ease-in;
+  transition: background-color .1s ease-in;
 }
 
-.campus-info img {
+.sidebar img {
   width: 35%;
   height: auto;
   padding: 1rem;
@@ -208,8 +207,8 @@ nav {
 }
 
 .learning .item:hover {
-  box-shadow: 0.5rem 0.5rem .25rem #888;
-  transition: box-shadow 0.1s ease-in;
+  background-color: silver;
+  transition: all 0.1s ease-in;
 }
 
 .learning img {
@@ -219,4 +218,14 @@ nav {
 
 .learning .content {
   padding: 1rem 1rem 0 1rem;
+}
+
+.thesis .title h1 {
+  margin-bottom: -1rem;
+}
+
+footer{
+  font-size: 0.75rem;
+  color: silver;
+  border-top: 2px solid whitesmoke;
 }
