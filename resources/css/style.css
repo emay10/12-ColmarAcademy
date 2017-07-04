@@ -79,6 +79,10 @@ header:hover {
   transition: opacity, 2s, ease-in, 0.2s;
 }
 
+.mobile {
+  display: none;
+}
+
 .logo,
 .copyright {
   flex-grow: 1;
@@ -140,7 +144,7 @@ nav {
 
 .start-btn:hover {
   background-color: #666;
-  transition: all 0.2s ease-in;
+  transition: background-color 0.2s ease-in 0s;
   cursor: pointer;
 }
 
@@ -174,7 +178,7 @@ nav {
 
 .sidebar .item:hover {
   background-color: Gainsboro;
-  transition: background-color .1s ease-in;
+  transition: background-color .1s ease-in 0s;
 }
 
 .sidebar img {
@@ -228,4 +232,101 @@ footer{
   font-size: 0.75rem;
   color: silver;
   border-top: 2px solid whitesmoke;
+}
+
+/*Mobile styling*/
+@media only screen and (max-width: 640px) {
+
+  .mobile {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  header .mobile {
+    justify-content: space-around;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+    border-bottom: 2px solid dodgerblue;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .banner .title {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .sidebar,
+  .sidebar img,
+  .sidebar .content {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sidebar .content {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .sidebar .item {
+    flex-direction: column;
+  }
+
+  .learning {
+    background-color: white;
+  }
+
+  .learning .item {
+    height: auto;
+    width: 100%;
+    background-color: Gainsboro;
+  }
+
+  .learning .item img,
+  .learning .item h4,
+  .learning .item p{
+    display: none;
+  }
+
+  /*.learning .item:hover {
+    display: inline-block;
+  }*/
+
+  .thesis .main-section {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  footer .copyright,
+  footer nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
