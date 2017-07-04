@@ -310,8 +310,8 @@ footer{
     display: none;
   }
 
-  /*.learning .item:hover {
-    display: inline-block;
+  /*.learning .item:hover .learning .item img {
+    display: block;
   }*/
 
   .thesis .main-section {
